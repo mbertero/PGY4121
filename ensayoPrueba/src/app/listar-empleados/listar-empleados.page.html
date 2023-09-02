@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Listar Empleados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Listar Empleados</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card  *ngFor="let empleado of empleados">
+    <ion-card-header>
+      <ion-card-title>Nombre: {{empleado.nombre}}</ion-card-title>
+      <ion-card-subtitle>Edad: {{empleado.edad}}</ion-card-subtitle>
+      <ion-card-subtitle>Cargo: {{empleado.cargo}}</ion-card-subtitle>
+    </ion-card-header>
+  
+  </ion-card>
+  <ion-button routerLink="/crear-empleados">Crear empleado</ion-button>
+
+</ion-content>
