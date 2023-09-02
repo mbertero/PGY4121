@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { StateService } from '../state/state.service';
 
 
 interface Empleados {
@@ -35,9 +37,15 @@ export class ListarEmpleadosPage implements OnInit {
   ]
 
 
-  constructor() { }
+  constructor(private router:Router, private stateService:StateService) { }
 
   ngOnInit() {
+  }
+
+  irACrear(){
+    this.stateService.setTitulo = 'Crear empleado'
+    this.router.navigate(['/crear-empleados'])
+
   }
 
 }

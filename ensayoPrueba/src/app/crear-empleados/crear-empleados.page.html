@@ -1,15 +1,8 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Crear Empleados</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Crear Empleados</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+</app-header>
+
 <ion-content class="ion-padding">
   <form [formGroup]="formularioCrearEmpleado">
   <ion-input formControlName="nombre" label="Ingrese Nombre" label-placement="floating" fill="outline" placeholder="Nombre"></ion-input> <br>
@@ -19,7 +12,4 @@
   <ion-button (click)="grabarEmpleado()">Grabar</ion-button>
 
 </form>
-
-</ion-content>
-
 </ion-content>

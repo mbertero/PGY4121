@@ -1,11 +1,8 @@
-<app-header></app-header>
+<app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Listar Empleados</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+</app-header>
+
   <ion-card  *ngFor="let empleado of empleados">
     <ion-card-header>
       <ion-card-title>Nombre: {{empleado.nombre}}</ion-card-title>
@@ -14,6 +11,6 @@
     </ion-card-header>
   
   </ion-card>
-  <ion-button routerLink="/crear-empleados">Crear empleado</ion-button>
+  <ion-button (click)="irACrear()">Crear empleado</ion-button>
 
-</ion-content>
+
