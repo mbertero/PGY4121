@@ -1,0 +1,45 @@
+<app-header></app-header>
+<ion-content class="ion-padding">
+
+  <form [formGroup]="formIngresarUsuario">
+
+        <ion-input
+          label="Nombre de usuario: "
+          id="nombre"
+          formControlName="nombre"
+          placeholder="Ingrese nombre de usuario"
+          type="text"
+          label-placement="floating"
+          fill="outline"
+        ></ion-input>
+        <br>
+
+        <ion-input
+          label="Contraseña: "
+          formControlName="password"
+          placeholder="Ingrese Contraseña"
+          type="password"
+          label-placement="floating"
+          fill="outline"
+        ></ion-input>
+        <br>
+
+
+      <ion-button
+        color="primary"
+        (click)="ingresarUsuario()"
+        type="submit"
+      >INGRESAR</ion-button>
+      <ion-button
+        color="secondary"
+        (click)="irARecuperar()"
+      >RECUPERAR</ion-button>
+
+  </form>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Desarrollo de Aplicaciones Móviles</ion-title>
+  </ion-toolbar>
+</ion-footer>
+

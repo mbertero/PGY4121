@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<ion-content class="ion-padding">
+  <!--Formulario reactivo-->
+  <form [formGroup]="formularioRecuperacion">
+
+        <ion-input
+          label="Nombre de usuario: "
+          formControlName="nombre"
+          placeholder="Ingrese nombre de usuario"
+          type="text"
+          label-placement="floating"
+          fill="outline"
+        ></ion-input>
+        <br>
+      <ion-button
+        color="primary"
+        (click)="recuperar()"
+      >RECUPERAR</ion-button>
+
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Desarrollo de Aplicaciones Móviles</ion-title>
+  </ion-toolbar>
+</ion-footer>
