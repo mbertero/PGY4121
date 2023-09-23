@@ -17,8 +17,14 @@ export class HomePage implements OnInit {
       this.rmService.getCharacters().subscribe(
         (data)=> {
           console.log(data);
+          localStorage.setItem('characters',JSON.stringify(data.results));
         }
       )
+  }
+  getCharacters(){
+    const data = localStorage.getItem('characters');
+    const result = JSON.parse(data);
+    return result;
   }
 
 }
