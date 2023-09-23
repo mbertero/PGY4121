@@ -7,6 +7,7 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 
 import { HttpClientModule } from '@angular/common/http'
+import { RickmortyService } from '../rickmorty.service';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http'
     HomePageRoutingModule,
     HttpClientModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage],
+  providers:[RickmortyService]
 })
 export class HomePageModule {}
