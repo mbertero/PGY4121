@@ -1,0 +1,7 @@
+{
+  "name": "EjManejoEstado ",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

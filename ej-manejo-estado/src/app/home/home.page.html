@@ -1,0 +1,36 @@
+<app-header></app-header>
+
+<ion-content class="ion-padding">
+
+
+  <form [formGroup]="formIngresarMensaje">
+
+    <ion-input
+      label="Ingresa Mensaje"
+      id="nombre"
+      formControlName="mensaje"
+      placeholder="Ingrese Mensaje"
+      type="text"
+      label-placement="floating"
+      fill="outline"
+    ></ion-input>
+    <br>
+
+ 
+  <ion-button
+    color="primary"
+    (click)=""
+    expand = "block"
+    type="submit"
+  >Enviar</ion-button>
+  <ion-button
+    color="primary"
+    expand = "block"
+    (click)=""
+  >Borrar</ion-button>
+
+</form>
+
+</ion-content>
+
+
