@@ -28,6 +28,7 @@ export class HomePage implements OnInit{
 
   ngOnInit():void {
     this.serviceRM.getCharacteres().subscribe((data:any)=>{
+      this.personaje =data;
       console.log(data);
     })
   }
